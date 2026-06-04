@@ -1,0 +1,39 @@
+:root{
+	--paper: #fff2db;
+	--ink: #4e3201;
+}
+
+@font-face {
+  font-family: 'ShantellSans';
+  src: url('fonts/ShantellSans.woff2') format('woff2'),
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body{
+	background-color: var(--paper);
+	color: var(--ink	);
+	font-family: 'ShantellSans', sans-serif;
+	font-size: clamp(1rem, 0.775rem + 1vi, 1.375rem);
+	max-inline-size: 45em;
+	margin-inline: auto;
+	padding: 1em 2em;
+}
+
+h1{
+	font-variation-settings: "ital" 1, "wght" 325, "INFM" 90, "BNCE" 66, "SPAC" 0;
+	background-image: linear-gradient(180deg, #03abee, #6407bc);
+	background-clip: text;
+	color: transparent;
+	display: inline-block;
+}
+
+*:not(li)::selection {
+  color: red;
+  background-color: yellow;
+}
