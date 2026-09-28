@@ -38,15 +38,15 @@ h1, p
 {
 	main
 	{
-		min-height: 100vh;
+		min-height: 100dvh;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: flex-end;
+		padding-bottom: 3.75rem;
 	}
 	section
 	{
 		min-width: 18.75em;
-		padding: 10px 100px;
 	}
 }
 
