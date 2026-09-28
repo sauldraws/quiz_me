@@ -38,7 +38,8 @@ h1, p
 {
 	main
 	{
-		min-height: 100dvh;display: flex;
+		min-height: 100dvh;
+		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
 		padding-bottom: 3.75rem;
@@ -46,7 +47,6 @@ h1, p
 	section
 	{
 		min-width: 18.75em;
-		padding: 1.25rem;
 	}
 }
 
