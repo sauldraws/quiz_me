@@ -1,39 +1,61 @@
-:root{
-	--paper: #fff2db;
-	--ink: #4e3201;
+@import url(https://fonts.bunny.net/css?family=aleo:500,900);
+
+:root
+{
+	--paper: #cfd6c4;
+	--ink: #352200;
 }
 
-@font-face {
-  font-family: 'ShantellSans';
-  src: url('fonts/ShantellSans.woff2') format('woff2'),
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+*, *::before, *::after
+{
+	box-sizing: border-box;
 }
 
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-body{
+body
+{
 	background-color: var(--paper);
-	color: var(--ink	);
-	font-family: 'ShantellSans', sans-serif;
+	color: var(--ink);
+	font-family: 'Aleo', serif;
 	font-size: clamp(1rem, 0.775rem + 1vi, 1.375rem);
-	max-inline-size: 45em;
-	margin-inline: auto;
-	padding: 1em 2em;
+	margin: 0 auto;
+	padding: 1.25rem;
 }
 
-h1{
-	font-variation-settings: "ital" 1, "wght" 325, "INFM" 90, "BNCE" 66, "SPAC" 0;
-	background-image: linear-gradient(180deg, #03abee, #6407bc);
-	background-clip: text;
-	color: transparent;
-	display: inline-block;
+h1
+{
+	font-weight: 900;
+	margin-inline: 0;
+	line-height: 1.0;
 }
 
-*:not(li)::selection {
-  color: red;
-  background-color: yellow;
+h1, p
+{
+	padding: 0;
+	margin-inline: 0;
+}
+
+@media (width >=25rem)
+{
+	main
+	{
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	section
+	{
+		min-width: 18.75em;
+		padding: 10px 100px;
+	}
+}
+
+
+
+
+
+*:not(li)::selection
+{
+	color: red;
+	background-color: yellow;
 }
